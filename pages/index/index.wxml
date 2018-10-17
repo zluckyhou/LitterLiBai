@@ -7,7 +7,14 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+
+  <view>
+    <map longitude='121.4737000000' latitude='31.2303700000'></map>
+  </view>
+
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <text class="user-motto">Hello {{motto}}</text>
+    <button bindtap='changeName'>Click Me!</button>
+    <!-- <button bindtap='changeName'>Click Me!</button> -->
   </view>
 </view>

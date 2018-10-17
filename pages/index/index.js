@@ -4,10 +4,15 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
+    motto: 'Wechat!',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  changeName: function () {
+    this.setData({
+      motto: app.globalData.userInfo.nickName
+    })
   },
   //事件处理函数
   bindViewTap: function() {
