@@ -16,7 +16,26 @@
   color: rgb(41, 81, 155);
 }
 
+.btn-area {
+  color:#4286f4;
+}
+
 .usermotto {
   margin-top: 200px;
   color:blue;
 }
+
+.div_class {
+  color:orange;
+}
+
+.page-section{
+  margin-bottom: 20rpx;
+}
+.flex-wrp {display: flex;}
+.bc_green {background: green;width:100px; height: 100px;}
+.bc_red {background: red;width:100px; height: 100px;}
+.bc_blue {background: blue;width:100px; height: 100px;}
+
+
+progress {margin: 10px;}

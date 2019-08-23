@@ -6,15 +6,62 @@
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
-  </view>
+</view>
+<!-- <view>
+  <open-data type="userAvatarUrl"></open-data>
+  <open-data type="userGender" lang="zh_CN"></open-data>
+  <open-data type="userNickName" lang="zh_CN"></open-data>
+  <open-data type="userProvince" lang="zh_CN"></open-data>
+</view> -->
 
-  <view>
-    <map longitude='121.4737000000' latitude='31.2303700000'></map>
-  </view>
+<rich-text nodes="{{br}}"></rich-text>
 
-  <view class="usermotto">
-    <text class="user-motto">Hello {{motto}}</text>
-    <button bindtap='changeName'>Click Me!</button>
-    <!-- <button bindtap='changeName'>Click Me!</button> -->
+<view>
+  <text class='custom_line'>icons</text>
+  <rich-text nodes="{{br}}"></rich-text>
+  <block wx:for="{{iconColor}}" wx:key="iconcolor_loop">
+    <icon type="success" size="40" color="{{item}}"></icon>
+  </block>
+</view>
+<!-- <text>'\n'</text> -->
+<view class='body-view'>
+  <text>{{blank_line}}</text>
+</view>
+
+<view class='btn-area'>
+  <view class='body-view'>
+    <text>{{text}}</text>
+    <button bindtap='add'>add line</button>
+    <button bindtap='remove'>remove line</button>
   </view>
+</view>
+
+<!-- 测试图片 -->
+<rich-text nodes="{{image}}" bindtap='tap'></rich-text>
+<rich-text nodes="{{br}}"></rich-text>
+<!-- 测试链接 -->
+<rich-text nodes="{{a}}"></rich-text>
+<rich-text nodes="{{br}}"></rich-text>
+
+<!-- 测试进度条 -->
+<!-- <progress percent="20" show-info />
+<progress percent="40" stroke-width="12" />
+<progress percent="60" color="pink" />
+<progress percent="80" active /> -->
+
+<!-- 测试button -->
+<button open-type='share' size='default' type='primary'>分享</button>
+
+<rich-text nodes="{{br}}"></rich-text>
+
+<!-- 测试checkbox -->
+<checkbox-group bindchange="checkboxChange">
+  <label class='checkbox' wx:for="{{items}}" wx:key="checkbox_list">
+    <checkbox value="{{item.name}}" checked="{{item.checked}}">{{item.value}}</checkbox>
+  </label>
+</checkbox-group>
+
+<rich-text nodes="{{br}}"></rich-text>
+
+
 </view>

@@ -7,23 +7,27 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "里小白",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "pageOrientation":"auto"
   },
   "tabBar": {
+    "position":"bottom",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "首页",
+        "iconPath":"icons/首页.png"
       },
       {
         "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "text": "日志",
+        "iconPath": "icons/日志.png"
       }
     ]
   },
   "networkTimeout": {
     "request": 10000,
-    "downloadFile": 10000
+    "downloadFile": 1000032
   },
   "debug": true,
   "resizable": true
